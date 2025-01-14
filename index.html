@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Title</title>
+    <!--  <link rel="icon" type="image/png" href="assets/logo/logownotext.png" /> -->
+    <!-- b Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+
+    <link rel="stylesheet" href="./styles/navbar.css" />
+    <link rel="stylesheet" href="./styles/footer.css" />
+    <link rel="stylesheet" href="./styles/main.css" />
+    <link rel="stylesheet" href="./styles/home.css" />
+  </head>
+  <body>
+    <!--y Navbar -->
+    <div id="navbar">
+      <div class="navbar">
+        <div class="logo">Dinz Handmade</div>
+        <div class="nav-list" id="navList">
+          <a href="#" class="active">Home</a>
+          <a href="./about/">About Us</a>
+          <a href="./products/">Product</a>
+          <a href="./contact/">Contact</a>
+        </div>
+        <div class="button-wrapper row">
+          <div class="button main">
+            <a href="">Join Our Workshop</a>
+          </div>
+        </div>
+        <div class="bar">
+          <a href="javascript:void(0);" id="menuToggle" class="row"
+            ><span>Menu</span>
+            <i class="fa-solid fa-bars-staggered" id="menuIcon"></i
+          ></a>
+        </div>
+      </div>
+    </div>
+    <!--y  End Navbar -->
+
+    <!-- Y Hero -->
+    <div id="hero">
+      <div class="container row">
+        <div class="title column">
+          <h1>
+            <span>Eco-Chic</span> <br />
+            Fashion for a <br />
+            Greener <span>Future</span>
+          </h1>
+          <p>
+            Celebrate sustainable style with zero-waste fabrics and natural
+            dyes. Ethical fashion that’s as kind to the planet as it is to you.
+          </p>
+          <div class="button main">
+            <a href="">Discover More</a>
+          </div>
+          <div class="content-wrapper row">
+            <div class="social-wrapper row">
+              <a href=""><i class="fa-brands fa-whatsapp"></i></a>
+              <a href=""><i class="fa-brands fa-instagram"></i></a>
+              <a href=""><i class="fa-brands fa-youtube"></i></a>
+            </div>
+            <div class="data row">
+              <div class="content column">
+                <h5>100+</h5>
+                <p>Customer</p>
+              </div>
+              <div class="content column">
+                <h5>120+</h5>
+                <p>Products</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="img-wrapper">
+          <img src="./assets/img/hero-1.webp" alt="" class="fade"/>
+        </div>
+        <div class="v-dot column">
+          <div class="circle active"  data-index="0"></div>
+          <div class="circle"  data-index="1"></div>
+          <div class="circle"  data-index="2"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Y end Hero -->
+
+    <!-- y Footer -->
+    <section id="footer">
+      <div class="container footer column">
+        <div class="footer-wrapper row">
+          <div class="content column">
+            <div class="contact-information">
+              <p>
+                <span><i class="fa-solid fa-location-dot"></i></span>Bali,
+                Indonesia
+              </p>
+              <p>
+                <span><i class="fa-solid fa-envelope"></i></span>
+                user@gmail.com
+              </p>
+              <p>
+                <span><i class="fa-solid fa-phone"></i></span> +6212342341
+              </p>
+            </div>
+          </div>
+          <div class="content row">
+            <div class="footer-nav column">
+              <p>About</p>
+              <a href="./about/">Profile</a>
+              <a href="./products/">Product</a>
+            </div>
+            <div class="footer-nav column">
+              <p>Support</p>
+              <a href="">Whatsapp</a>
+              <a href="">Instagram</a>
+              <a href="./contact/">Contact Us</a>
+            </div>
+          </div>
+        </div>
+        <p style="text-align: center">Copyright 2024 All Right Reserved.</p>
+      </div>
+    </section>
+
+    <!-- y End Footer -->
+
+    <!-- R script -->
+    <script src="./scripts/navbar.js"></script>
+    <script src="./scripts/hero.js"></script>
+  </body>
+</html>

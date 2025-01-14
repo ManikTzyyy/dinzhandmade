@@ -1,0 +1,157 @@
+#hero .container {
+  background-color: var(--main-clr);
+  margin: 70px 0;
+  padding: 0;
+  position: relative;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+}
+
+#hero .title {
+  gap: 20px;
+  padding-left: 20px;
+  max-width: 50%;
+}
+
+#hero .img-wrapper img {
+  opacity: 0;
+  transition: all 1s ease-in-out;
+}
+
+#hero .img-wrapper img.fade {
+  opacity: 1;
+}
+
+#hero .title h1 span {
+  color: var(--second-clr);
+}
+
+#hero .title p {
+  margin-right: 100px;
+}
+
+#hero .img-wrapper {
+  height: 100%;
+  width: auto;
+  position: absolute;
+  right: 40px;
+}
+
+#hero .content-wrapper {
+  gap: 30px;
+}
+
+#hero .data {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 10px;
+}
+
+#hero .data h5 {
+  font-weight: bold;
+  font-size: 2.5em;
+}
+
+#hero .data p {
+  margin-right: 0;
+  font-size: 1.6em;
+}
+
+#hero .v-dot {
+  gap: 10px;
+  align-items: end;
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  justify-self: end;
+  align-self: flex-end;
+}
+
+#hero .v-dot .circle.active {
+  background-color: black;
+  scale: 1.2;
+}
+#hero .v-dot .circle {
+  background-color: rgba(128, 128, 128, 0.333);
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+}
+
+* {
+  /* border: 1px solid yellow; */
+}
+
+@media (max-width: 768px) {
+  #hero .container {
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  #hero .img-wrapper {
+    position: relative;
+    right: 0;
+    width: auto;
+    height: 250px;
+    order: 1;
+  }
+  #hero .v-dot {
+    
+    flex-direction: row;
+    align-items: center;
+    position: relative;
+    right: 0;
+    bottom: 0;
+    justify-self: center;
+    align-self: center;
+  }
+
+  #hero h1 {
+    font-size: 3.2em;
+  }
+
+  #hero .title {
+    gap: 20px;
+    padding-left: 0;
+    max-width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #hero .button {
+    padding-top: 20px;
+  }
+
+  #hero .title p {
+    margin-right: 0;
+    padding: 0 50px;
+  }
+
+  #hero .content-wrapper {
+    flex-direction: column;
+    gap: 10px;
+    padding-top: 10px;
+  }
+  #hero .data {
+    gap: 15px;
+    
+  }
+  #hero .data h5 {
+    /* font-size: 2em; */
+    width: fit-content;
+    
+  }
+
+  #hero .data p {
+    /* font-size: 1.1em; */
+    width: fit-content;
+    padding: 0;
+  }
+}
+
+@media (max-width: 480px) {
+}

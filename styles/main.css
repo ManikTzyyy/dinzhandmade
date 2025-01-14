@@ -1,0 +1,95 @@
+* {
+  --main-clr: #fffef9;
+  --second-clr: #9d8753;
+  --black-clr: #000000;
+}
+/* g Typography */
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 300;
+  font-style: normal;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+
+
+
+h1 {
+  font-size: 4em;
+}
+/* g End Typography */
+
+.container {
+  padding: 40px 0;
+}
+
+/* g Row & Column */
+.row {
+  display: flex;
+  flex-direction: row;
+}
+.column {
+  display: flex;
+  flex-direction: column;
+}
+.row-r {
+  display: flex;
+  flex-direction: row-reverse;
+}
+.column-r {
+  display: flex;
+  flex-direction: column-reverse;
+}
+/* g end Row & Column */
+
+.button a {
+  text-decoration: none;
+}
+
+
+.button.main a {
+  color: white;
+  background-color: var(--black-clr);
+  padding: 10px 10px;
+  border: 1px solid var(--black-clr);
+}
+
+.button.second a {
+  color: var(--black-clr);
+  background-color: white;
+  padding: 10px 10px;
+  border: 1px solid var(--black-clr);
+}
+
+
+.img-wrapper img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  transition: all 0.3s ease;
+}
+
+.social-wrapper {
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+.social-wrapper a {
+  text-decoration: none;
+  color: var(--second-clr);
+  font-size: 32px;
+}
+
+@media (max-width: 768px) {
+}
+
+@media (max-width: 480px) {
+}
