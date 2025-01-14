@@ -23,9 +23,7 @@
   opacity: 1;
 }
 
-#hero .title h1 span {
-  color: var(--second-clr);
-}
+
 
 #hero .title p {
   margin-right: 100px;
@@ -79,6 +77,32 @@
   height: 10px;
   border-radius: 50%;
   transition: all 0.3s ease;
+}
+
+/* R end hero */
+
+#benefit {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+}
+
+#benefit .content-wrapper {
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+#benefit .content {
+    justify-content: center;
+    align-items: center;
+    width: 250px;
+}
+
+#benefit .img-wrapper{
+    width: 70px;
+    height: 70px;
 }
 
 * {

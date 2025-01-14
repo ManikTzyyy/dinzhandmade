@@ -20,9 +20,14 @@ body {
 }
 
 
-
+.txt-clr{
+  color: var(--second-clr);
+}
 
 h1 {
+  font-size: 4em;
+}
+h2 {
   font-size: 4em;
 }
 /* g End Typography */
