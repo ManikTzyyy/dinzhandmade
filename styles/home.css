@@ -15,6 +15,7 @@
 }
 
 #hero .img-wrapper img {
+  object-fit: contain;
   opacity: 0;
   transition: all 1s ease-in-out;
 }
@@ -87,7 +88,7 @@
   padding-top: 0;
 }
 
-#benefit h4{
+#benefit h4 {
   font-weight: bold;
 }
 
@@ -192,6 +193,56 @@
   height: 60px;
   background-color: var(--main-clr);
   border: 1px solid black;
+}
+
+/* R end Product display */
+
+#journey .content-wrapper {
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+#journey .container:nth-child(2) .img-wrapper {
+  grid-column: 2;
+}
+
+#journey .container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 0;
+}
+
+#journey .container .text-wrapper h4 {
+  font-size: 3em;
+  letter-spacing: 0.3em;
+}
+
+#journey .container:nth-child(2) .text-wrapper {
+  left: -120%;
+  text-align: end;
+}
+
+#journey .img-wrapper {
+  width: 300px;
+  height: 500px;
+  position: relative;
+  grid-column: 1;
+}
+
+#journey .button {
+  padding-bottom: 10px;
+}
+
+#journey .container .text-wrapper {
+  background-color: rgba(255, 255, 255, 0.47);
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 50%;
+  width: 500px;
+  gap: 20px;
+  padding: 10px;
 }
 
 * {
@@ -308,7 +359,55 @@
     width: fit-content;
     padding: 0;
   }
+
+  /* r end hero */
+  #journey .img-wrapper {
+    width: 200px;
+    height: 300px;
+    position: relative;
+    grid-column: 1;
+  }
+
+  #journey .container .text-wrapper {
+    width: 300px;
+  }
+
+  #journey .container .text-wrapper h4 {
+    font-size: 2em;
+    letter-spacing: 0.3em;
+  }
 }
 
 @media (max-width: 480px) {
+
+  #journey .container .text-wrapper {
+    width: 200px;
+  }
+
+  #journey .img-wrapper {
+    width: 170px;
+    height: 300px;
+    position: relative;
+    grid-column: 1;
+  }
+
+  #journey .content-wrapper{
+    padding: 0 20px;
+  }
+  #journey h2 {
+    font-size: 3em;
+  }
+
+  #journey .container:nth-child(2) .text-wrapper {
+    left: -100px;
+    text-align: end;
+  }
+  #journey .container .text-wrapper {
+    left: 0;
+    width: 250px;
+  }
+  #journey .container .text-wrapper h4 {
+    font-size: 1.1em;
+    letter-spacing: 0.3em;
+  }
 }
