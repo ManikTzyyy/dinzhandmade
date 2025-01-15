@@ -40,7 +40,9 @@
   position: relative;
   display: inline-block;
   transition: all 0.3s ease;
-  font-size: 1.2em;
+  font-size: 0.8em;
+  letter-spacing: .2em;
+  text-transform: uppercase;
 }
 .navbar .button-wrapper {
   justify-content: end;
@@ -100,7 +102,7 @@
     width: 50%;
     height: 100vh;
     gap: 20px;
-    padding: 55px 20px 0 0;
+    padding: 105px 20px 0 0;
     box-shadow: 0 5px 10px #1a1a1d23;
   }
   .navbar .button-wrapper {

@@ -26,9 +26,11 @@ body {
 
 h1 {
   font-size: 4em;
+  letter-spacing: .1em;
 }
 h2 {
   font-size: 4em;
+  letter-spacing: .1em;
 }
 
 /* g End Typography */
@@ -70,7 +72,7 @@ h2 {
 
 .button.second a {
   color: var(--black-clr);
-  background-color: white;
+  background-color: transparent;
   padding: 10px 10px;
   border: 1px solid var(--black-clr);
 }
