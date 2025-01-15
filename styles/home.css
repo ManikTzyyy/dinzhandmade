@@ -173,12 +173,11 @@
 
 #product-display .box-wrapper .img-wrapper.active {
   background-color: var(--black-clr);
-  opacity: 1;
 }
 
 #product-display .box-wrapper .img-wrapper:hover {
   scale: 1.2;
-  opacity: 0.7;
+  
   cursor: pointer;
 }
 
