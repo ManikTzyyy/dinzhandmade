@@ -596,4 +596,10 @@
   #testimonial .title p {
     text-align: center;
   }
+
+  #store .img-wrapper {
+    height: 200px;
+    height: 200px;
+    position: relative;
+  }
 }
