@@ -308,6 +308,88 @@
   color: white;
 }
 
+/* r end about */
+
+
+#testimonial {
+  position: relative;
+}
+
+#testimonial .title{
+  padding: 20px;
+}
+
+
+
+#testimonial .carousel {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  
+  
+}
+#testimonial .carousel-track {
+  transition: all 0.4s ease-in-out;
+}
+#testimonial .carousel-slide{
+  justify-content: space-between;
+  min-width: 100%;
+  box-sizing: border-box;
+  padding: 10px;
+  gap: 10px;
+}
+
+
+#testimonial .content {
+  gap: 10px;
+  background-color: rgba(190, 190, 190, 0.114);
+  padding: 20px;
+  border-radius: 50px 0 0 0;
+  width: 350px;
+}
+#testimonial .content .header {
+  gap: 10px;
+  justify-content: start;
+  align-items: center;
+}
+
+#testimonial .content .name-wrapper p {
+  color: gray ;
+}
+
+#testimonial .content p.name {
+
+  color: black;
+}
+
+#testimonial .content .img-wrapper {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+#testimonial .carousel-buttons{
+align-self: center;
+gap: 20px;
+}
+
+#testimonial button:hover {
+  cursor: pointer;
+}
+#testimonial button {
+  border: none;
+  background-color: black;
+  color: white;
+  padding: 5px 10px;
+  display: flex;
+  gap: 10px;
+  text-align: center;
+}
+
+
+
+
 * {
   /* border: 1px solid yellow; */
 }
@@ -439,6 +521,13 @@
     font-size: 2em;
     letter-spacing: 0.3em;
   }
+
+  /* r end journyey */
+  #testimonial .content {
+    width: 250px;
+  }
+
+  
 }
 
 @media (max-width: 480px) {
@@ -477,5 +566,18 @@
   #journey .container .text-wrapper h4 {
     font-size: 1.1em;
     letter-spacing: 0.5em;
+  }
+
+  #testimonial .carousel-slide{
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  #testimonial .content {
+    width: 85vw;
+  }
+
+  #testimonial .title p{
+    text-align: center;
   }
 }

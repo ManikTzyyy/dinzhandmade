@@ -19,6 +19,7 @@
     align-items: center;
     flex-direction: row-reverse;
     height: 300px;
+    flex-wrap: wrap-reverse;
   }
   #footer a {
     text-decoration: none;
