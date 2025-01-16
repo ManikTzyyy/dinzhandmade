@@ -126,7 +126,6 @@
   height: 100vh;
   width: 40%;
   background-color: var(--main-clr);
-  /* background-color: red; */
 }
 
 #product-display .title {
@@ -199,10 +198,13 @@
 
 /* R end Product display */
 
+#journey {
+  height: 1170px;
+}
+
 #journey .content-wrapper {
   justify-content: center;
   align-items: center;
-  gap: 20px;
 }
 
 #journey .v-line {
@@ -213,19 +215,6 @@
 
 #journey h2 {
   padding-left: 20px;
-}
-
-#journey .container:nth-child(2) .img-wrapper {
-  grid-column: 2;
-}
-
-#journey .container:nth-child(2) {
-  position: relative;
-  top: -100px;
-}
-#journey .container:nth-child(3) {
-  position: relative;
-  top: -200px;
 }
 
 #journey .container {
@@ -249,22 +238,27 @@
   letter-spacing: 0.2em;
 }
 
-#journey .container:nth-child(2) .text-wrapper {
-  left: -120%;
-  text-align: start;
-  align-items: start;
-}
-
-#journey .img-wrapper {
-  width: 300px;
-  height: 400px;
-  position: relative;
-  grid-column: 1;
-}
-
 #journey .button {
   padding: 20px 0 10px 0;
 }
+
+
+#journey .img-wrapper img {
+  background-image: url("../assets/img/model5.webp");
+  background-attachment: fixed;
+  background-position: center;
+  background-size: contain;
+  background-repeat: repeat-y;
+}
+
+#journey .img-wrapper {
+  width: 30vw;
+  height: 400px;
+  position: relative;
+  grid-column: 1;
+  
+}
+
 
 #journey .container .text-wrapper {
   align-items: end;
@@ -272,12 +266,33 @@
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  left: 50%;
-  width: 500px;
+  left: 30%;
+  width: 50vw;
   padding: 10px;
   z-index: 10;
-  background-color: #ffffff2c;
+  /* background-color: #ffffff2c; */
 }
+
+
+#journey .container:nth-child(2) .text-wrapper {
+  left: -103%;
+  text-align: start;
+  align-items: start;
+}
+
+#journey .container:nth-child(2) .img-wrapper {
+  grid-column: 2;
+}
+
+#journey .container:nth-child(2) {
+  position: relative;
+  top: -100px;
+}
+#journey .container:nth-child(3) {
+  position: relative;
+  top: -200px;
+}
+
 
 /* R end jorney */
 #about-home {
@@ -384,7 +399,6 @@
 
 #store {
   padding: 50px 0;
-  
 }
 
 #store h3 {
@@ -395,12 +409,12 @@
 #store .container {
   padding: 0;
   gap: 20px;
-  flex-wrap: wrap;
   justify-content: space-evenly;
+  align-items: center;
 }
 
 #store .img-wrapper {
-  height: 250px;
+  width: 250px;
   height: 250px;
   position: relative;
 }
@@ -524,65 +538,39 @@
   }
 
   /* r end hero */
-  #journey .img-wrapper {
-    width: 200px;
-    height: 300px;
-    position: relative;
-    grid-column: 1;
-  }
-
-  #journey .container .text-wrapper {
-    width: 300px;
-  }
 
   #journey .container .text-wrapper h4 {
     font-size: 2em;
-    letter-spacing: 0.3em;
+  }
+  
+  #journey .container .text-wrapper p {
+    font-size: 0.78em;
   }
 
   /* r end journyey */
-  #testimonial .content {
-    width: 250px;
+
+  #store .container {
+    flex-direction: column;
   }
+
+  #store .img-wrapper {
+    width: 200px;
+    height: 250px;
+    position: relative;
+  }
+
 }
 
 @media (max-width: 480px) {
-  #journey .container .text-wrapper {
-    width: 200px;
-  }
-
-  #journey .img-wrapper {
-    width: 170px;
-    height: 300px;
-    position: relative;
-    grid-column: 1;
-  }
-  #journey .v-line {
-    width: 2px;
-    background-color: black;
-    height: 25px;
-  }
-
-  #journey .content-wrapper {
-    padding: 0 0;
-    gap: 20px;
-  }
-  #journey h2 {
-    font-size: 3em;
-  }
-  #journey .container .text-wrapper p {
-    font-size: 0.8em;
-  }
-
-  #journey .container:nth-child(2) .text-wrapper {
-    left: -100px;
-    text-align: end;
-  }
 
   #journey .container .text-wrapper h4 {
-    font-size: 1.1em;
-    letter-spacing: 0.5em;
+    font-size: 1.2em;
   }
+  
+  #journey .container .text-wrapper p {
+    font-size: 0.78em;
+  }
+  /* r end joruney */
 
   #testimonial .carousel-slide {
     flex-direction: column;
@@ -597,9 +585,20 @@
     text-align: center;
   }
 
+  /* r end testimonial */
+
   #store .img-wrapper {
     height: 200px;
     height: 200px;
     position: relative;
+  }
+
+  #store .button {
+    position: absolute;
+    bottom: -20px;
+    right: 50%;
+    width: max-content;
+    transform: translateX(50%);
+    z-index: 10;
   }
 }

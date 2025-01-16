@@ -18,7 +18,7 @@
     padding: 0 20px;
     align-items: center;
     flex-direction: row-reverse;
-    height: 300px;
+    min-height: 300px;
     flex-wrap: wrap-reverse;
   }
   #footer a {
@@ -69,7 +69,19 @@
   @media (max-width: 480px) {
     #footer .footer-wrapper {
       flex-direction: column-reverse;
+      justify-content: start;
+      align-items: start;
+      gap: 50px;
     }
+    #footer .content:nth-child(2) {
+      flex-direction: column;
+    }
+
+    #footer .content:nth-child(1) {
+      align-self: end;
+      justify-self: end;
+    }
+    
   }
   
   @media (max-width: 768px) {
