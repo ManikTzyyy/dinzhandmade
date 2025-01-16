@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="../styles/navbar.css" />
     <link rel="stylesheet" href="../styles/footer.css" />
     <link rel="stylesheet" href="../styles/main.css" />
-
+    <link rel="stylesheet" href="../styles/product.css" />
   </head>
   <body>
     <!--y Navbar -->
@@ -22,7 +22,7 @@
       <div class="navbar">
         <div class="logo">Dinz Handmade</div>
         <div class="nav-list" id="navList">
-          <a href="../" >Home</a>
+          <a href="../">Home</a>
           <a href="../about/">About Us</a>
           <a href="#" class="active">Product</a>
           <a href="../contact/">Contact</a>
@@ -34,14 +34,91 @@
         </div>
         <div class="bar">
           <a href="javascript:void(0);" id="menuToggle" class="row"
-            ><span>Menu</span> <i class="fa-solid fa-bars-staggered" id="menuIcon"></i
+            ><span>Menu</span>
+            <i class="fa-solid fa-bars-staggered" id="menuIcon"></i
           ></a>
         </div>
       </div>
     </div>
     <!--y  End Navbar -->
 
-    <div class="container" style="height: 200vh"></div>
+    <div id="product-catalogue">
+      <div class="header row" id="header">
+        <div class="filter-wrapper row">
+          <div class="button-cat active">
+            <a href="">All</a>
+          </div>
+          <div class="button-cat">
+            <a href="">Top</a>
+          </div>
+          <div class="button-cat">
+            <a href="">Bottom</a>
+          </div>
+          <div class="button-cat">
+            <a href="">Other</a>
+          </div>
+          <div class="button-cat">
+            <a href="">Accessories</a>
+          </div>
+        </div>
+        <div class="search-wrapper row">
+          <input
+            type="text"
+            id="searchInput"
+            placeholder="Search"
+            onkeyup="searchItems()"
+            class="search-input"
+          />
+          <button type="submit" class="search-button">Submit</button>
+        </div>
+      </div>
+      <div class="container column">
+        <div class="body">
+          <a href="" class="card-product column">
+            <div class="img-wrapper">
+              <img src="../assets/img/hat-bg.webp" alt="" />
+            </div>
+            <h4>Product Name</h4>
+            <h5>IDR 100,000</h5>
+          </a>
+          <a href="" class="card-product column">
+            <div class="img-wrapper">
+              <img src="../assets/img/clutch.webp" alt="" />
+            </div>
+            <h4>Product Name</h4>
+            <h5>IDR 100,000</h5>
+          </a>
+          <a href="" class="card-product column">
+            <div class="img-wrapper">
+              <img src="../assets/img/bag.webp" alt="" />
+            </div>
+            <h4>Product Name</h4>
+            <h5>IDR 100,000</h5>
+          </a>
+          <a href="" class="card-product column">
+            <div class="img-wrapper">
+              <img src="../assets/img/sandal.webp" alt="" />
+            </div>
+            <h4>Product Name</h4>
+            <h5>IDR 100,000</h5>
+          </a>
+          <a href="" class="card-product column">
+            <div class="img-wrapper">
+              <img src="../assets/img/model2.webp" alt="" />
+            </div>
+            <h4>Product Name</h4>
+            <h5>IDR 100,000</h5>
+          </a>
+          <a href="" class="card-product column">
+            <div class="img-wrapper">
+              <img src="../assets/img/model4.webp" alt="" />
+            </div>
+            <h4>Product Name</h4>
+            <h5>IDR 100,000</h5>
+          </a>
+        </div>
+      </div>
+    </div>
 
     <!-- y Footer -->
     <div id="footer-placeholder"></div>
@@ -50,5 +127,24 @@
     <!-- R script -->
     <script src="../scripts/navbar.js"></script>
     <script src="../scripts/footer.js"></script>
+
+    <script>
+      let lastScrollPosition = 0;
+      const header = document.getElementById("header");
+
+      window.addEventListener("scroll", () => {
+        const currentScrollPosition = window.pageYOffset;
+
+        if (currentScrollPosition > lastScrollPosition) {
+          // Scrolling ke bawah, sembunyikan header
+          header.classList.add("header-hidden");
+        } else {
+          // Scrolling ke atas, tampilkan header
+          header.classList.remove("header-hidden");
+        }
+
+        lastScrollPosition = currentScrollPosition;
+      });
+    </script>
   </body>
 </html>

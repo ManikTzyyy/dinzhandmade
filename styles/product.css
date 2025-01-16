@@ -1,5 +1,165 @@
-@media (max-width: 768px) {
+#product-catalogue {
+  /* min-height: 100vh; */
+  padding-top: 100px;
 }
 
+#product-catalogue .container {
+  justify-content: center;
+  align-items: center;
+}
+
+#product-catalogue .filter-wrapper {
+  justify-content: center;
+  align-items: center;
+}
+#product-catalogue .button-cat.active a {
+  color: white;
+  background-color: black;
+}
+
+#product-catalogue .button-cat a {
+  color: black;
+  background-color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+  border: 1px solid black;
+}
+
+#product-catalogue .search-wrapper button {
+  background-color: black;
+  color: white;
+  padding: 10px 20px;
+}
+
+#product-catalogue .search-wrapper input {
+  background-color: white;
+  border: none;
+  outline: none;
+  border: 1px solid black;
+  padding: 10px 50px 10px 10px;
+  font-size: 1em;
+}
+
+#product-catalogue .header {
+  justify-content: space-between;
+  padding: 20px 25px;
+  transition: all 0.3s ease-in-out;
+  position: sticky;
+  top: 70px;
+  background-color: white;
+  z-index: 10;
+}
+
+.header-hidden {
+  transform: translateY(-100px);
+}
+
+#product-catalogue .body {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 10px;
+  flex-shrink: 0;
+}
+
+#product-catalogue .card-product {
+  width: 100%;
+  height: 250px;
+  justify-content: start;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  text-decoration: none;
+  color: black;
+  transition: all 0.3s ease;
+}
+
+#product-catalogue .card-product:hover {
+  scale: 1.01;
+  box-shadow: 0px 0px 10px rgba(128, 128, 128, 0.338);
+}
+
+#product-catalogue .card-product .img-wrapper {
+  width: 100%;
+  height: 200px;
+}
+
+#product-catalogue .card-product .img-wrapper img {
+  object-fit: cover;
+}
+
+@media (max-width: 1200px) {
+  #product-catalogue .body {
+    grid-template-columns: repeat(4, 1fr); /* Jadi 4 item per baris */
+  }
+}
+
+@media (max-width: 900px) {
+  #product-catalogue .body {
+    grid-template-columns: repeat(3, 1fr); /* Jadi 3 item per baris */
+  }
+}
+
+@media (max-width: 768px) {
+  #product-catalogue .header {
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-direction: column-reverse;
+    padding: 20px 0;
+  }
+
+  #product-catalogue .button-cat a {
+    padding: 10px 5vw;
+  }
+  #product-catalogue .search-wrapper button {
+    padding: 10px 20px;
+  }
+
+  #product-catalogue .search-wrapper input {
+    padding: 10px 170px 10px 10px;
+  }
+
+  #product-catalogue .header {
+    top: 50px;
+  }
+
+  .header-hidden {
+    transform: translateY(-120px);
+  }
+}
+
+@media (max-width: 600px) {
+  #product-catalogue .body {
+    grid-template-columns: repeat(2, 1fr); /* Jadi 2 item per baris */
+  }
+}
 @media (max-width: 480px) {
+  #product-catalogue .button-cat a {
+    padding: 10px 2vw;
+  }
+
+  #product-catalogue .search-wrapper button {
+    padding: 10px 10px;
+  }
+
+  #product-catalogue .search-wrapper input {
+    padding: 10px 30px 10px 10px;
+  }
+
+  #product-catalogue .card-product {
+    width: 100%;
+    height: 200px;
+    justify-content: start;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    text-decoration: none;
+    color: black;
+    transition: all 0.3s ease;
+  }
+
+  #product-catalogue .card-product .img-wrapper {
+    width: 100%;
+    height: 150px;
+  }
 }
