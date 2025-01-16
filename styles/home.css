@@ -242,13 +242,14 @@
   padding: 20px 0 10px 0;
 }
 
-
 #journey .img-wrapper img {
   background-image: url("../assets/img/model5.webp");
   background-attachment: fixed;
   background-position: center;
   background-size: contain;
-  background-repeat: repeat-y;
+  background-repeat: no-repeat;
+  border: none;
+  outline: none;
 }
 
 #journey .img-wrapper {
@@ -256,9 +257,9 @@
   height: 400px;
   position: relative;
   grid-column: 1;
-  
+  border: none;
+  outline: none;
 }
-
 
 #journey .container .text-wrapper {
   align-items: end;
@@ -272,7 +273,6 @@
   z-index: 10;
   /* background-color: #ffffff2c; */
 }
-
 
 #journey .container:nth-child(2) .text-wrapper {
   left: -103%;
@@ -292,7 +292,6 @@
   position: relative;
   top: -200px;
 }
-
 
 /* R end jorney */
 #about-home {
@@ -542,7 +541,7 @@
   #journey .container .text-wrapper h4 {
     font-size: 2em;
   }
-  
+
   #journey .container .text-wrapper p {
     font-size: 0.78em;
   }
@@ -558,15 +557,13 @@
     height: 250px;
     position: relative;
   }
-
 }
 
 @media (max-width: 480px) {
-
   #journey .container .text-wrapper h4 {
     font-size: 1.2em;
   }
-  
+
   #journey .container .text-wrapper p {
     font-size: 0.78em;
   }
