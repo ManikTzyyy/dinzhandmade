@@ -8,21 +8,29 @@
   align-items: center;
 }
 
-#product-catalogue .filter-wrapper {
-  justify-content: center;
-  align-items: center;
-}
-#product-catalogue .button-cat.active a {
+#product-catalogue .button-cat.active {
   color: white;
   background-color: black;
 }
 
-#product-catalogue .button-cat a {
+#product-catalogue .button-cat {
   color: black;
   background-color: white;
   text-decoration: none;
-  padding: 10px 20px;
+  padding: 10px 10px;
   border: 1px solid black;
+}
+
+#product-catalogue .filter-wrapper {
+  justify-content: start;
+  align-items: center;
+  width: 50vw;
+  position: relative;
+}
+
+#product-catalogue .search-wrapper {
+  width: 50vw;
+  position: relative;
 }
 
 #product-catalogue .search-wrapper button {
@@ -36,18 +44,19 @@
   border: none;
   outline: none;
   border: 1px solid black;
-  padding: 10px 50px 10px 10px;
+  padding: 10px 5px;
   font-size: 1em;
+  width: 100%;
 }
 
 #product-catalogue .header {
-  justify-content: space-between;
-  padding: 20px 25px;
+  padding: 20px 0;
   transition: all 0.3s ease-in-out;
   position: sticky;
   top: 70px;
   background-color: white;
   z-index: 10;
+  width: 100%;
 }
 
 .header-hidden {
@@ -108,15 +117,16 @@
     padding: 20px 0;
   }
 
-  #product-catalogue .button-cat a {
-    padding: 10px 5vw;
-  }
-  #product-catalogue .search-wrapper button {
-    padding: 10px 20px;
+  #product-catalogue .button-cat {
+    padding: 10px 5px;
   }
 
-  #product-catalogue .search-wrapper input {
-    padding: 10px 170px 10px 10px;
+  #product-catalogue .filter-wrapper {
+    width: 100vw;
+  }
+
+  #product-catalogue .search-wrapper {
+    width: 100vw;
   }
 
   #product-catalogue .header {
@@ -134,18 +144,6 @@
   }
 }
 @media (max-width: 480px) {
-  #product-catalogue .button-cat a {
-    padding: 10px 2vw;
-  }
-
-  #product-catalogue .search-wrapper button {
-    padding: 10px 10px;
-  }
-
-  #product-catalogue .search-wrapper input {
-    padding: 10px 30px 10px 10px;
-  }
-
   #product-catalogue .card-product {
     width: 100%;
     height: 200px;

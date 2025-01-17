@@ -17,6 +17,10 @@
     <link rel="stylesheet" href="./styles/home.css" />
   </head>
   <body>
+    <!-- y floating social -->
+    <div id="floating-social-placeholder"></div>
+    <!-- y end floating social -->
+
     <!--y Navbar -->
     <div id="navbar">
       <div class="navbar">
@@ -26,6 +30,16 @@
           <a href="./about/">About Us</a>
           <a href="./products/">Product</a>
           <a href="./contact/">Contact</a>
+          <div class="mobile-nav column">
+            <a href=""
+              >Whatsapp <span><i class="fa-brands fa-whatsapp"></i></span
+            ></a>
+            <a href=""
+              >Instagram <span><i class="fa-brands fa-instagram"></i></span
+            ></a>
+            <a href="">Shopee</a>
+            <a href="">Tokopedia</a>
+          </div>
         </div>
         <div class="button-wrapper row">
           <div class="button main">
@@ -89,6 +103,48 @@
 
     <!-- Y end Hero -->
 
+    <!-- Y product display -->
+
+    <div id="product-display">
+      <div class="block"></div>
+      <h2 class="title">
+        Our Top <br />
+        <span class="txt-clr">Collection</span>
+      </h2>
+      <div class="content-wrapper row">
+        <div class="img-wrapper display column">
+          <h1>BUCKET HAT</h1>
+          <img src="./assets/img/hat.webp" alt="" />
+        </div>
+        <div class="content-wrapper-2 column">
+          <p class="desc">
+            Dinz Handmade creates zero-waste products using natural dyes,
+            blending sustainability with creativity. Each piece is handcrafted
+            to minimize environmental impact while showcasing eco-friendly
+            materials. We are committed to reducing waste and supporting ethical
+            production for a greener future.
+          </p>
+          <div class="box-wrapper row">
+            <div class="img-wrapper active">
+              <img src="./assets/img/hat.webp" alt="BUCKET HAT" />
+            </div>
+            <div class="img-wrapper">
+              <img src="./assets/img/clutch.webp" alt="CLUTCH" />
+            </div>
+            <div class="img-wrapper">
+              <img src="./assets/img/bag.webp" alt="BAG" />
+            </div>
+            <div class="img-wrapper">
+              <img src="./assets/img/sandal.webp" alt="slippers" />
+            </div>
+          </div>
+          <div class="button main"><a href="./products/">Discover More</a></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Y end Product Display -->
+
     <!-- Y benefit -->
     <div id="benefit" class="container column">
       <h2>Why <span class="txt-clr">Choose</span> Us?</h2>
@@ -132,48 +188,6 @@
       </div>
     </div>
     <!-- Y end benefit -->
-
-    <!-- Y product display -->
-
-    <div id="product-display">
-      <div class="block"></div>
-      <h2 class="title">
-        Our Top <br />
-        <span class="txt-clr">Collection</span>
-      </h2>
-      <div class="content-wrapper row">
-        <div class="img-wrapper display column">
-          <h1>BUCKET HAT</h1>
-          <img src="./assets/img/hat.webp" alt="" />
-        </div>
-        <div class="content-wrapper-2 column">
-          <p class="desc">
-            Dinz Handmade creates zero-waste products using natural dyes,
-            blending sustainability with creativity. Each piece is handcrafted
-            to minimize environmental impact while showcasing eco-friendly
-            materials. We are committed to reducing waste and supporting ethical
-            production for a greener future.
-          </p>
-          <div class="box-wrapper row">
-            <div class="img-wrapper active">
-              <img src="./assets/img/hat.webp" alt="BUCKET HAT" />
-            </div>
-            <div class="img-wrapper">
-              <img src="./assets/img/clutch.webp" alt="CLUTCH" />
-            </div>
-            <div class="img-wrapper">
-              <img src="./assets/img/bag.webp" alt="BAG" />
-            </div>
-            <div class="img-wrapper">
-              <img src="./assets/img/sandal.webp" alt="slippers" />
-            </div>
-          </div>
-          <div class="button main"><a href="./products/">Discover More</a></div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Y end Product Display -->
 
     <!-- y Journey -->
     <div id="journey">
@@ -326,17 +340,19 @@
             </div>
           </div>
         </div>
-        <p style="text-align: center; letter-spacing: 0; text-transform: none;">Copyright 2024 All Right Reserved.</p>
+        <p style="text-align: center; letter-spacing: 0; text-transform: none">
+          Copyright 2024 All Right Reserved.
+        </p>
       </div>
     </section>
 
     <!-- y End Footer -->
 
     <!-- R script -->
-    <script src="./scripts/navbar.js"></script>
+    <script src="./scripts/navbarHome.js"></script>
+    <script src="./scripts/floatingMenu.js"></script>
     <script src="./scripts/hero.js"></script>
     <script src="./scripts/productDisplay.js"></script>
-    <script src="./scripts/carousel.js"></script>
     <script src="./scripts/generateCarouselCard.js"></script>
   </body>
 </html>

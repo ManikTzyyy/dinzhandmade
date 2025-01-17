@@ -76,10 +76,24 @@
   box-shadow: 0 5px 10px #1a1a1d23;
 }
 
+#navbar .mobile-nav {
+  padding-top: 10px;
+  border-top: 1px solid black;
+  text-align: end;
+  justify-content: end;
+  align-items: end;
+  gap: 10px;
+  display: none;
+}
+
 /* end navbar */
 
 
 @media (max-width: 768px) {
+  #navbar .mobile-nav{
+    display: flex;
+  }
+
   .navbar {
     position: relative;
     display: grid;
