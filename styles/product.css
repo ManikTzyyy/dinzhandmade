@@ -61,6 +61,7 @@
 
 .header-hidden {
   transform: translateY(-100px);
+  
 }
 
 #product-catalogue .body {
@@ -134,7 +135,7 @@
   }
 
   .header-hidden {
-    transform: translateY(-120px);
+    transform: translateY(-220px);
   }
 }
 

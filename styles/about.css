@@ -1,4 +1,77 @@
+#story .container, #fashion .container, #spotlight .container, #team .container {
+    padding: 60px 30px 10px 30px;
+}
+
+#story .img-wrapper, #team .img-wrapper {
+    width: 250px;
+    height: 250px;
+    flex-shrink: 0;
+}
+
+#story .content-wrapper, #team .content-wrapper{
+    gap: 20px;
+}
+
+
+
+/* r end storyy */
+
+ .content-wrapper-scroller {
+    gap: 10px;
+    overflow-x: scroll;
+    scrollbar-width: none; 
+}
+
+ .content-wrapper-scroller::-webkit-scrollbar {
+    display: none; 
+}
+.content-wrapper-scroller .img-wrapper {
+    width: 300px ;
+    height: 500px;
+    background-color: gray;
+    flex-shrink: 0;
+    overflow: hidden;
+    position: relative;
+}
+.content-wrapper-scroller .text-wrapper {
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.9) 10%, rgba(0, 0, 0, 0));
+    color: white;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    padding: 20px 10px;
+    height: 50%;
+    justify-content: end;
+    align-items: start;    
+}
+
+.content-wrapper-scroller .text-wrapper p {
+    letter-spacing: .2em;
+}
+
+.content-wrapper-scroller .text-wrapper a{
+    color: white;
+}
+
+/* r scroll */
+
+
+
+
+
+
+
 @media (max-width: 768px) {
+    #story .content-wrapper{
+        flex-wrap: wrap-reverse;
+        align-items: center;
+        justify-content: center;
+    }
+    #team .content-wrapper{
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
 }
 
 @media (max-width: 480px) {

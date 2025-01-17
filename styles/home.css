@@ -81,6 +81,8 @@
 /* R end hero */
 
 #benefit {
+  color: white;
+  background-color: black;
   align-items: center;
   text-align: center;
   gap: 20px;

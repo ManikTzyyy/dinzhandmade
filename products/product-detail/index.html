@@ -11,22 +11,91 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
     />
 
-    <link rel="stylesheet" href="../styles/navbar.css" />
-    <link rel="stylesheet" href="../styles/footer.css" />
-    <link rel="stylesheet" href="../styles/main.css" />
-
+    <link rel="stylesheet" href="../../styles/footer.css" />
+    <link rel="stylesheet" href="../../styles/main.css" />
+    <link rel="stylesheet" href="../../styles/product-detail.css" />
   </head>
   <body>
-   
-
-    <div class="container" style="height: 200vh"></div>
+    <div id="detail">
+      <div class="header-detail">
+        <a href="../" class="row"
+          ><span><i class="fa-solid fa-chevron-left"></i></span>
+          <h3>Back</h3></a
+        >
+      </div>
+      <div class="body-detail row">
+        <div class="img-container column">
+          <div class="img-wrapper main">
+            <img id="mainImg" src="/assets/img/hero-1.webp" alt="" />
+          </div>
+          <div class="other-img-wrapper row">
+            <div class="img-wrapper">
+              <img src="/assets/img/model4.webp" alt="" />
+            </div>
+            <div class="img-wrapper">
+              <img src="/assets/img/model5.webp" alt="" />
+            </div>
+            <div class="img-wrapper">
+              <img src="/assets/img/model3.webp" alt="" />
+            </div>
+          </div>
+        </div>
+        <div class="detail-product-wrapper column">
+          <div class="title-wrapper column">
+            <h3>Product Name</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum
+              quisquam labore eligendi nisi quo quibusdam?Lorem ipsum dolor sit,
+              amet consectetur adipisicing elit. Possimus voluptate dolorem
+              corrupti, sed, harum nam consectetur aliquam maxime culpa incidunt
+              iste? Fugiat fugit esse incidunt. Aliquam, rerum et. Explicabo,
+              est.
+            </p>
+            <br />
+            <p>Category</p>
+          </div>
+          <div class="price-wrapper column">
+            <h3>IDR 100,000</h3>
+            <div class="button main"><a href="">Order Now</a></div>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <!-- y Footer -->
     <div id="footer-placeholder"></div>
     <!-- y End Footer -->
 
     <!-- R script -->
-    <script src="../scripts/navbar.js"></script>
-    <script src="../scripts/footer.js"></script>
+    <script>
+      // Menggunakan fetch untuk memuat footer dari folder 'element'
+      fetch("../../content/footer.html") // Path relatif menuju folder 'element'
+        .then((response) => response.text()) // Mengambil konten HTML
+        .then((data) => {
+          // Memasukkan konten footer ke dalam elemen dengan id 'footer-placeholder'
+          document.getElementById("footer-placeholder").innerHTML = data;
+        })
+        .catch((error) => {
+          console.error("Error loading footer:", error);
+        });
+    </script>
+
+    <script>
+      // Get the main image element
+      const mainImg = document.getElementById("mainImg");
+
+      // Get all other images
+      const otherImgs = document.querySelectorAll(
+        ".other-img-wrapper .img-wrapper img"
+      );
+
+      // Add click event listener to each image
+      otherImgs.forEach((img) => {
+        img.addEventListener("click", () => {
+          // Set the src of the main image to the clicked image's src
+          mainImg.src = img.src;
+        });
+      });
+    </script>
   </body>
 </html>
